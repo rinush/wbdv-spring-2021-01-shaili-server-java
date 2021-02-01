@@ -1,0 +1,82 @@
+div.row {
+    padding: 10px;
+    border: 1px solid #b3b3b3;
+    background-color: white;
+}
+
+div.row.first {
+    background-color: #007bff;
+    border: none;
+}
+
+i.fa.fa-user {
+    color: #d9d9d9;
+    margin-left: 15px;
+}
+
+i.eight {
+    color: white;
+    background-color: #d9d9d9;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.wbdv-sticky-top {
+    position: fixed;
+    width: 100%;
+    background-color: #007bff;
+    z-index: 1;
+}
+
+.wbdv-padding-5px {
+    padding: 5px;
+    padding-bottom: 0px;
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+div.row.second {
+    background-color: #b3b3b3;
+    padding: 15px;
+    border: none;
+}
+
+i.fa.fa-bars {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+i.fa.fa-plus {
+    color: white;
+    background-color: #ff5252;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+div.container.courses {
+    position: relative;
+    top: 100px;
+}
+
+@media screen and (min-width: 500px) {
+
+    div.course-manager {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 550px) {
+
+    div.course-manager {
+        display: block;
+    }
+
+}
