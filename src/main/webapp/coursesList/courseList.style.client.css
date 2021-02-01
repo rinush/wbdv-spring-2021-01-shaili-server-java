@@ -17,9 +17,9 @@ i.fa.fa-user {
 i.eight {
     color: white;
     background-color: #d9d9d9;
+    text-align: center;
     height: 25px;
     width: 25px;
-    padding: 5px;
     border-radius: 50%;
 }
 
@@ -53,30 +53,37 @@ h4 {
     color: white;
 }
 
-i.fa.fa-plus {
+i.fa.fa-plus.plus {
     color: white;
     background-color: #ff5252;
     border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
     padding: 5px;
+}
+
+div.close {
+    position: absolute;
+    right: 0px;
+    text-align: right;
 }
 
 div.container.courses {
     position: relative;
-    top: 100px;
+    top: 30px;
 }
 
-@media screen and (min-width: 500px) {
-
-    div.course-manager {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 550px) {
-
-    div.course-manager {
-        display: block;
-    }
-
+div.plus {
+    position: fixed;
+    right: 50px;
+    z-index: 1;
+    bottom: 50px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background-color: #ff5252;
+    border-radius: 50%;
+    color: white;
+    padding: 25px;
 }
