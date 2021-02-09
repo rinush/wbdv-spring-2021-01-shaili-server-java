@@ -34,6 +34,10 @@ body{
     padding-right: 5px;
 }
 
+.navbar-brand {
+    left: 10px;
+}
+
 .elements-nav .nav-item.active{
     background-color: rgba(0,0,0,.13);
 }
