@@ -1,9 +1,16 @@
 body{
     background-color: black;
+<<<<<<< HEAD
     padding-top: 60px;
 }
 
 .new-module {
+=======
+    margin-top: 50px;
+}
+
+.add-module {
+>>>>>>> c645dd801f3562f44b78fdbd156c1af5306a5510
     background-color: black;
     border: none;
     border-bottom: 2px solid gray;
@@ -11,7 +18,11 @@ body{
     border-radius: 0px;
 }
 
+<<<<<<< HEAD
 .new-module:focus {
+=======
+.add-module:focus {
+>>>>>>> c645dd801f3562f44b78fdbd156c1af5306a5510
     border: 0px;
     background-color: black;
     color: white;
@@ -28,16 +39,21 @@ body{
     color: white;
 }
 
+<<<<<<< HEAD
 .course-editor-nav .nav-item .nav-link{
     color: white;
 }
 
 .course-editor-nav .nav-item{
+=======
+.elements-nav .nav-item{
+>>>>>>> c645dd801f3562f44b78fdbd156c1af5306a5510
     margin-right: 5px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
+<<<<<<< HEAD
 .course-editor-nav .nav-item.active{
     background-color: rgba(0,0,0,.13);
 }
@@ -53,11 +69,33 @@ body{
 }
 
 .module-list-pill{
+=======
+.navbar-brand {
+    left: 10px;
+}
+
+.elements-nav .nav-item.active{
+    background-color: rgba(0,0,0,.13);
+}
+
+.all-module-elements{
+    background: black;
+}
+
+.topics{
+    background-color: #e9e9e9;
+    padding: 25px;
+    margin-top: -10px;
+}
+
+.module-element{
+>>>>>>> c645dd801f3562f44b78fdbd156c1af5306a5510
     margin-top: 25px;
     margin-bottom: 20px;
     margin-left:5px;
 }
 
+<<<<<<< HEAD
 .module-list-pill .nav-link{
     background-color: gray;
     color: white;
@@ -68,12 +106,34 @@ body{
 }
 
 .topic-pill-list .nav-link{
+=======
+.module-element .nav-link.active, .topic-element .nav-link.active{
+    background-color: black;
+}
+
+.topic-element .nav-link{
+>>>>>>> c645dd801f3562f44b78fdbd156c1af5306a5510
     background-color: #a9a9a9;
     color: white;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c645dd801f3562f44b78fdbd156c1af5306a5510
 a:hover {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+=======
+.elements-nav .nav-item .nav-link{
+    color: white;
+}
+
+.list-group-item {
+    background-color: gray;
+    color: white;
+}
+
+>>>>>>> c645dd801f3562f44b78fdbd156c1af5306a5510
