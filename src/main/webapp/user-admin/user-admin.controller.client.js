@@ -5,7 +5,7 @@
     var $userRowTemplate, $tbody;
     var users = []
     var selectedUser = null
-    // var userService = new AdminUserServiceClient();
+    var userService = new AdminUserServiceClient();
     $(main);
 
         function main() {
@@ -35,10 +35,19 @@
                 $roleFld.val("FACULTY")
             })
 
+        userService.findAllUsers()
+            .then(function (actualUsersFromServer) {
+              users = actualUsersFromServer
+              renderUsers(users)
+            })
+
         }
         function createUser(user) {
-              users.push(user)
+            userService.createUser(user)
+            .then(function (actualUser) {
+              users.push(actualUser)
               renderUsers(users)
+              })
         }
         function deleteUser(event) {
             var deleteBtn = jQuery(event.target)
@@ -46,8 +55,11 @@
             var theIndex = deleteBtn.attr("id")
             var theId = users[theIndex]._id
 
-            users.splice(theIndex, 1)
-            renderUsers(users)
+            userService.deleteUser(theId)
+                  .then(function (status) {
+                users.splice(theIndex, 1)
+                renderUsers(users)
+            })
         }
         function selectUser(event) {
           var selectBtn = jQuery(event.target)
@@ -69,9 +81,12 @@
           selectedUser.lastName = $lastNameFld.val()
           selectedUser.role = $roleFld.val()
 
-          var index = users.findIndex(user => user._id === selectedUser._id)
-          users[index] = selectedUser
-          renderUsers(users)
+          userService.updateUser(selectedUser._id, selectedUser)
+              .then(function (status) {
+              var index = users.findIndex(user => user._id === selectedUser._id)
+              users[index] = selectedUser
+              renderUsers(users)
+          })
 
           $usernameFld.val("")
           $passwordFld.val("")
