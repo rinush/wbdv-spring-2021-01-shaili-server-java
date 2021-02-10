@@ -21,6 +21,11 @@
             $updateBtn.click(updateUser)
 
             $createBtn.click(() => {
+
+            if (($usernameFld.val())
+            && ($passwordFld.val())
+            && ($firstNameFld.val())
+            && ($lastNameFld.val())) {
                 createUser({
                     username: $usernameFld.val(),
                     password: $passwordFld.val(),
@@ -28,6 +33,7 @@
                     lastName: $lastNameFld.val(),
                     role: $roleFld.val(),
                 })
+            }
                 $usernameFld.val("")
                 $passwordFld.val("")
                 $firstNameFld.val("")
@@ -103,13 +109,13 @@
                   .prepend(`
                 <tr>
                     <td>${user.username}</td>
-                    <td>${user.password}</td>
+                    <td>${"*****"}</td>
                     <td>${user.firstName}</td>
                     <td>${user.lastName}</td>
                     <td>${user.role}</td>
                     <td>
-                        <i class="fa-2x fa fa-times wbdv-delete" id="${i}"></i>
-                        <i class="fa-2x fa fa-pencil wbdv-select" id="${i}"></i>
+                        <button><i class="fa-2x fa fa-times wbdv-delete" id="${i}"></i></button>
+                        <button><i class="fa-2x fa fa-pencil wbdv-select" id="${i}"></i></button>
                     </td>
                 </tr>
               `)
