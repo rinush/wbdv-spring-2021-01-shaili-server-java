@@ -1,6 +1,5 @@
 package com.example.wbdvsp2103shailiserverjava.controllers;
 
-
 import com.example.wbdvsp2103shailiserverjava.models.Widget;
 import com.example.wbdvsp2103shailiserverjava.services.WidgetService;
 
@@ -19,8 +18,7 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "*")
 public class WidgetController {
-
-
+  
   @Autowired
   WidgetService service;
 
