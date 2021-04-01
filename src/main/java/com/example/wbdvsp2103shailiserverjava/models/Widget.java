@@ -21,7 +21,7 @@ public class Widget {
   private String style;
   private String value;
   private String topicId;
-  private Boolean listOrdered;
+  private Boolean ordered;
 
   public String getTopicId() {
     return topicId;
@@ -31,11 +31,11 @@ public class Widget {
     this.topicId = topicId;
   }
 
-  public Boolean getListOrdered() {
-    return listOrdered;
+  public Boolean getOrdered() {
+    return ordered;
   }
-  public void setListOrdered(Boolean listOrdered){
-    this.listOrdered = listOrdered;
+  public void setOrdered(Boolean ordered){
+    this.ordered = ordered;
   }
 
   public String getSrc() {
@@ -106,7 +106,7 @@ public class Widget {
   public Widget() {
   }
 
-  public Widget(Long id, String topicId, String type, Integer size, String text, String src, Integer width, Integer height, Boolean listOrdered) {
+  public Widget(Long id, String topicId, String type, Integer size, String text, String src, Integer width, Integer height, Boolean ordered) {
     this.id = id;
     this.topicId = topicId;
     this.type = type;
@@ -115,7 +115,7 @@ public class Widget {
     this.src = src;
     this.width = width;
     this.height = height;
-    this.listOrdered = listOrdered;
+    this.ordered = ordered;
   }
 }
 
